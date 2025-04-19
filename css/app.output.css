@@ -296,6 +296,9 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -371,6 +374,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
@@ -738,6 +744,9 @@
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-blue-400 {
     color: var(--color-blue-400);
   }
@@ -845,6 +854,18 @@
   }
   .ring-inset {
     --tw-ring-inset: inset;
+  }
+  .sm\:text-3xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
   }
 }
 :root {
