@@ -1,5 +1,6 @@
 ﻿window.getCurrentTop = () => {
-	return document.documentElement.scrollTop;
+	let top = document.documentElement.scrollTop;
+	return top;
 }
 
 window.setCurrentTop = (top) => {
